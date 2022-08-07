@@ -1,0 +1,20 @@
+% more to read: https://tex.stackexchange.com/questions/326375/boxed-border-color
+
+\documentclass{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{color}
+
+\begin{document}
+
+$$\arctg x = x - \frac{x^3}{3} + \frac{x^5}{5} + \dots$$
+
+$$\frac{\pi}{4} = 7\arctg\frac{1}{23} + \boxed{\color{red} 10\arctg\frac{1}{30}} + 5\arctg\frac{1}{38} + 3\arctg\frac{1}{182}$$
+
+$$\frac{\pi}{4} = \boxed{\color{red} -8\arctg\frac{1}{566}} + 8\arctg\frac{1}{109} - 8\arctg\frac{1}{135} + 5\arctg\frac{1}{8} + 2\arctg\frac{1}{18} + 3\arctg\frac{1}{57}$$
+
+\end{document}
